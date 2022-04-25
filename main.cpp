@@ -10,11 +10,13 @@ int main(){
 
 	BMPImage img;
 
-	img.set_height(256);
-	img.set_width(512);
+	img.set_height(1246345623);
+	img.set_width(1246345623);
 
 	cout << img.get_height() << endl;
 	cout << img.get_width() << endl;
+
+	cout << MAX_WIDTH;
 
 	return 0;
 }

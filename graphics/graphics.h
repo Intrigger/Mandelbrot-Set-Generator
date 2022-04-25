@@ -3,6 +3,9 @@
 
 namespace graphics{
 
+	#define MAX_WIDTH 65536
+	#define MAX_HEIGHT 65536
+
 	class BMPImage{
 	private:
 		size_t height;
