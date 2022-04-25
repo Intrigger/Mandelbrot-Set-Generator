@@ -14,7 +14,7 @@ void BMPImage::save_to_file(std::string filename){
 	unsigned int offset = 14 + 40;
 
 	unsigned int headerSize = 40;
-	unsigned int dimensions[2] = { this->width, this->height };
+	unsigned int dimensions[2] = { (unsigned int)this->width, (unsigned int)this->height };
 	unsigned short colorPlanes = 1;
 	unsigned short bpp = 32;
 	unsigned int compression = 0;
@@ -40,9 +40,9 @@ void BMPImage::save_to_file(std::string filename){
 
 	unsigned char x,r,g,b;
 
-	for (int i=0; i < dimensions[1]; ++i)
+	for (int i=0; i < dimensions[1]; i++)
 	{
-		for (int j=0; j < dimensions[0]; ++j)
+		for (int j=0; j < dimensions[0]; j++)
 		{
 			x = 0;
 			r = pixels[i][j].r;

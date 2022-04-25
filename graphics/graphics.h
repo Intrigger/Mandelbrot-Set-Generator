@@ -33,6 +33,8 @@ namespace graphics{
 
 		void save_to_file(std::string filename);
 
+		void clear();
+
 	};
 
 };
