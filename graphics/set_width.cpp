@@ -31,6 +31,7 @@ void BMPImage::set_width(const size_t& Width){
 		else{
 			std::cerr << "In set_width(): " << " Width must be 1 or bigger." << std::endl;
 			this->width = 0;
+			exit(-1);
 		}
 	}
 	else{
@@ -38,5 +39,6 @@ void BMPImage::set_width(const size_t& Width){
 		std::cerr << "In set_width(): " <<
 				     "Couldn`t set width to value " << Width << std::endl;
 		std::cerr << "(maximum width is " << MAX_WIDTH << ")." << std::endl;
+		exit(-1);
 	}
 }

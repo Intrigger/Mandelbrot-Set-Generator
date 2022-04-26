@@ -38,6 +38,7 @@ void BMPImage::set_height(const size_t& Height){
 		else{
 			std::cerr << "In set_height(): " << " Height must be 1 or bigger." << std::endl;
 			this->height = 0;
+			exit(-1);
 		}
 	}
 	else{
@@ -45,5 +46,6 @@ void BMPImage::set_height(const size_t& Height){
 		std::cerr << "In set_height(): " <<
 				     "Couldn`t set height to value " << Height << std::endl;
 		std::cerr << "(maximum height is " << MAX_HEIGHT << ")." << std::endl;
+		exit(-1);
 	}
 }
