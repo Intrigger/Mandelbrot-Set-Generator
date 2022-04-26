@@ -6,6 +6,11 @@
 using namespace graphics;
 
 void BMPImage::save_to_file(std::string filename){
+
+	/*
+	https://gamesmaker.ru/programming/graphics/format-dannyh-bmp-bitmap/
+	*/
+
 	std::ofstream os(filename.c_str(), std::ios::binary);
 
 	unsigned char signature[2] = { 'B', 'M' };
